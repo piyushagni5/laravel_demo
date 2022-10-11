@@ -106,7 +106,7 @@
             </div>
 
             <footer class="card-footer">
-                <a class="card-footer-item button" href="">
+                <a class="card-footer-item button" href="{{route('tasks.edit', ['task' => $task->id])}}">
                     Edit
                 </a>
             </footer>
