@@ -101,7 +101,7 @@ class TaskController extends Controller
     public function complete(Task $task): RedirectResponse
     {
         DB::transaction(fn() => $task->update(['is_completed' => true]));
-        dd($task);
+        // dd($task);
 
         return to_route('tasks.index');
     }

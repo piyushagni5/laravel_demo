@@ -27,7 +27,7 @@ Route::get('/', function () {
 // Route::patch('tasks/{task}/complete', [\App\Http\Controllers\TaskController::class, 'complete'])->name('tasks.complete');
 // Route::patch('tasks/{task}/yet_complete', [\App\Http\Controllers\TaskController::class, 'yetComplete'])->name('tasks.yet_complete');
 
-Route::controller(\App\Http\Controllers\TaskController::class)
+Route::controller(TaskController::class)
     ->prefix('tasks/{task}')
     ->as('tasks.')
     ->group(function () {
